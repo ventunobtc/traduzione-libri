@@ -1,145 +1,144 @@
-## What is Bitcoin?
+## Cos'è Bitcoin?
 
-Bitcoin is a *peer to peer electronic cash*, a new form of digital money that can be transferred between people or computers without any trusted middleman (such as a bank), and whose issuance is not under the control of any single party. 
+Bitcoin è un *sistema di moneta elettronica peer to peer*, una nuova forma di denaro digitale che può essere trasferito tra persone o computer senza alcun intermediario fidato (come una banca) e la cui emissione non è sotto il controllo di una singola parte. 
 
-Think of a paper dollar or physical metal coin. When you give that money to another person, they don't need to know who you are. They just need to trust that the cash they get from you is not a forgery. Typically people do this with physical money using just their eyes and fingers, or using special testing equipment for larger amounts.
+Pensa ad un dollaro di carta o ad una moneta fisica di metallo. Quando dai quel denaro ad un'altra persona, questa non ha bisogno di sapere chi sei. Deve solo fidarsi che il denaro che riceve da te non sia falsificato. Con il denaro fisico, di solito, le persone lo fanno semplicemente con gli occhi e con le dita, oppure utilizzando speciali apparecchiature di verifica nel caso di somme più consistenti.
 
-As we've shifted to a digital society, the majority of our payments are now made over the Internet by means of a middleman service: a credit card company like Visa, a digital payment provider such as PayPal or Apple Pay, or an online platform like WeChat in China.
+Da quando siamo diventati una società digitale, la maggior parte dei pagamenti viene effettuata su Internet tramite un servizio di intermediazione: una società di carte di credito come Visa, un gestore di pagamenti digitali come PayPal o Apple Pay, o una piattaforma online come WeChat in Cina.
 
-The movement toward digital payments brings with it the reliance on a central actor that has to approve and verify every payment. This is because the nature of money has changed from a physical thing you can carry, transfer, and verify yourself, to digital bits that have to be stored and verified by a third party that controls their transfer.
+Il passaggio ai pagamenti digitali comporta la dipendenza da un attore centrale che deve approvare e verificare ogni pagamento. Questo perché la natura del denaro è cambiata: da un oggetto fisico che si può trasportare, trasferire e verificare da soli, a bit digitali che devono essere memorizzati e verificati da una terza parte che ne controlla il trasferimento.
 
-As we give up our cash for convenient digital payments, we also create a system where we give extraordinary powers to those who would seek to oppress us. Digital payment platforms have become the basis of dystopian authoritarian systems of control such as those used by the Chinese government in order to monitor dissidents and prevent citizens whose behavior they don't like from purchasing goods and services.
+Se rinunciamo al denaro contante in cambio di comodi pagamenti digitali, creiamo anche un sistema in cui diamo poteri straordinari a coloro che potrebbero cercare di opprimerci. Le piattaforme di pagamento digitale sono diventate una base per sistemi di controllo autoritari e distopici, come quelli utilizzati dal governo cinese per monitorare i dissidenti e impedire ai cittadini il cui comportamento non è gradito di acquistare beni e servizi.
 
-Bitcoin offers an alternative to centrally controlled digital money with a system that gives us back the person to person nature of cash, but in a digital form:
+Bitcoin offre un'alternativa al denaro digitale controllato a livello centrale grazie ad un sistema che ci restituisce la stessa possibilità di transare da persona a persona del denaro contante, ma in forma digitale:
 
-1.  A digital asset (typically *bitcoin* with a lowercase *b)* whose supply is limited, known in advance, and unchangeable. This stands in stark contrast to the paper notes and digital versions thereof issued by governments and central banks, whose supply expands at an unpredictable rate.
-2.  A bunch of interconnected computers (the *Bitcoin network)*, which anyone can join by running a piece of software. This network serves to issue bitcoins, track their ownership, and transfer them between participants without relying on any middlemen such as banks, payment companies, and government entities.
-3.  The Bitcoin client software, a piece of code that anyone can run on their computer to become a participant in the network. This software is open source, which means that anyone can see how it works, as well as contribute new features and bug fixes to it.
+1.  Un bene digitale (tipicamente *bitcoin* con la *b* minuscola) la cui offerta è limitata, conosciuta fin dall'inizio e immutabile. Ciò è in netto contrasto con le banconote e le loro versioni digitali emesse da governi e banche centrali, la cui offerta si espande ad un ritmo imprevedibile.
+2.  Un gruppo di computer interconnessi (la *rete Bitcoin*), a cui chiunque può aderire eseguendo un software. Questa rete serve a emettere bitcoin, a tracciarne il possesso e a trasferirli tra i partecipanti senza dover ricorrere a intermediari come banche, società di pagamento ed enti governativi.
+3.  Il client software Bitcoin, un pezzo di codice che chiunque può eseguire sul proprio computer per divenire un partecipante della rete. Questo software è open source, il che significa che chiunque può vedere come funziona e contribuire con nuove funzionalità e correzioni di bug.
 
 ![Bitcoin network](images/Bitcoin-capital-B.png)
 
-*Bitcoin is a network of computers running the Bitcoin client software.*
+*Bitcoin è una rete di computer che eseguono il software client Bitcoin*.
 
 
-We'll get into the motivations behind Bitcoin in the next section.
+Nella prossima sezione approfondiremo le motivazioni alla base di Bitcoin.
 
-### Where Did It Come From?
+### Come è nato?
 
-Bitcoin was invented by a person or group known by the pseudonym of [Satoshi Nakamoto](https://en.wikipedia.org/wiki/Satoshi_Nakamoto) around 2008. No one knows the identity of this person or group, and as far as we know, they've disappeared and haven't been heard from for years.
+Bitcoin è stato inventato da una persona o un gruppo noto con lo pseudonimo di [Satoshi Nakamoto](https://it.wikipedia.org/wiki/Satoshi_Nakamoto) intorno al 2008. Nessuno conosce l'identità di questa persona o di questo gruppo e, per quanto ne sappiamo, sono spariti e non se ne hanno notizie da anni.
 
-On Feb 11, 2009, Satoshi wrote about an early version of Bitcoin on an online forum for *cypherpunks*, people who work on cryptography technology and are concerned with individual privacy and freedom. Though this isn't the first official release announcement of Bitcoin, it does contain a good summary of Satoshi's motivations, so we'll use it to lay the ground work for our discussion.
+L'11 febbraio 2009, Satoshi ha scritto di una prima versione di Bitcoin su un forum online per *cypherpunks*, persone che lavorano sulla tecnologia della crittografia e si dedicano alla privacy e alla libertà individuale. Sebbene questo non sia il primo annuncio ufficiale del rilascio di Bitcoin, contiene un buon riassunto delle motivazioni di Satoshi, quindi lo useremo per gettare le basi della nostra discussione.
 
-The relevant bits are extracted below. In the next section, we'll walk through some of these statements and try to understand what problems of the current financial system Satoshi was solving:
+Le parti rilevanti sono estratte di seguito. Nella prossima sezione, esamineremo alcune di queste dichiarazioni e cercheremo di capire quali problemi dell'attuale sistema finanziario Satoshi intendeva risolvere:
 
-> *I\'ve developed a new open source P2P* *e-cash system called Bitcoin. It\'s completely decentralized, with no central server or trusted parties, because everything is based on crypto proof instead of trust. \[...\]*
+> *Ho sviluppato un nuovo sistema open source P2P di moneta elettronica chiamato Bitcoin. È completamente decentralizzato, senza server centrali o parti fidate, perché tutto si basa sulla prova crittografica anziché sulla fiducia. \[...\]*
 >
-> *The root problem with conventional currency is all the trust that\'s required to make it work. The central bank must be trusted not to debase the currency, but the history of fiat currencies is full of breaches of that trust. Banks must be trusted to hold our money and transfer it electronically, but they lend it out in waves of credit bubbles with barely a fraction in reserve. We have to trust them with our privacy, trust them not to let identity thieves drain our accounts. Their massive overhead costs make micropayments impossible.*
+> *Il problema fondamentale della moneta convenzionale è la fiducia che è necessaria per farla funzionare. Bisogna fidarsi del fatto che la banca centrale non svaluti la moneta, ma la storia delle valute fiat è piena di tradimenti di questa fiducia. Dobbiamo affidare alle banche il compito di custodire il nostro denaro e di trasferirlo elettronicamente, ma loro lo prestano in ondate di bolle di credito mantenendone a malapena una piccola parte come riserva. Dobbiamo affidare a loro la nostra privacy, sperando che non lascino che i ladri di identità prosciughino i nostri conti correnti. I loro enormi costi di gestione rendono impossibili i micropagamenti.*
 >
-> *A generation ago, multi-user time-sharing computer systems had a similar problem. Before strong encryption, users had to rely on password protection to secure their files \[...\]*
+> *Una generazione fa, i sistemi informatici multiutente di condivisione del tempo avevano un problema analogo. Prima dell'introduzione della crittografia avanzata, per proteggere i propri file gli utenti dovevano affidarsi alle password.*
 >
-> *Then strong encryption became available to the masses, and trust was no longer required. Data could be secured in a way that was physically impossible for others to access, no matter for what reason, no matter how good the excuse, no matter what.*
+> *Da quando la crittografia avanzata è stata resa disponibile alle masse, la fiducia non è più stata necessaria. I dati hanno potuto essere protetti in modo tale da rendere fisicamente impossibile l'accesso da parte di terzi, per qualsiasi motivo, a prescindere dalla scusa, senza eccezioni.*
 >
-> *It\'s time we had the same thing for money. With e-currency based on cryptographic proof, without the need to trust a third party middleman, money can be secure and transactions effortless. \[...\]*
+> *È ora che la stessa cosa valga anche per il denaro. Con una moneta elettronica basata sulla prova crittografica e senza la necessità di fidarsi di un intermediario di terze parti, il denaro può essere sicuro e le transazioni possono essere effettuate senza difficoltà. \[...\]*
 >
-> *Bitcoin\'s solution is to use a peer-to-peer network to check for double-spending. In a nutshell, the network works like a distributed timestamp server, stamping the first transaction to spend a coin. It takes advantage of the nature of information being easy to spread but hard to stifle. For details on how it works, see the design paper at [[http://www.bitcoin.org/bitcoin.pdf]](http://www.bitcoin.org/bitcoin.pdf)*
+> *La soluzione offerta da Bitcoin consiste nell'utilizzare una rete peer-to-peer per rilevare eventuali doppie spese. In poche parole, la rete funziona come un servizio di timestamp (N.d.T.: marcatura temporale) distribuito, che contrassegna la prima transazione che spende una moneta. Sfrutta la peculiarità dell'informazione di essere facile da diffondere ma difficile da limitare. Per i dettagli sul suo funzionamento, si veda il documento di progetto all'indirizzo [[https://bitcoin.org/files/bitcoin-paper/bitcoin_it.pdf]](http://www.bitcoin.org/bitcoin.pdf).*
 >
 > Satoshi Nakamoto
 
-### What Problems Does it Solve?
+### Quali problemi risolve?
 
-Let's break down some of Satoshi's post. Throughout the book, we will cover how these concepts are actually implemented. Don't worry if something feels unfamiliar in this section, as we'll cover it in depth later. The idea here is to see Satoshi's goals so that we can aim to achieve them as we go through the exercise of *Inventing Bitcoin.*
-
-
-
-> *I've developed a new open source P2P e-cash system*
-
-P2P stands for *peer to peer* and indicates a system where one person can interact with another without anyone in the middle, as equal peers. You may recall P2P file sharing technologies like Napster, Kazaa, and BitTorrent, which first enabled people to share music and movies with each other without a middleman. Satoshi designed Bitcoin to allow people to exchange *e-cash*, electronic cash, without going through a middleman in much the same way.
-
-The software is *open source*, which means that anyone can see how it works and contribute to it. This is important as it removes the requirement to trust Satoshi. We don't need to believe anything Satoshi wrote in his post about how the software works. We can look at the code and verify how it works for ourselves. Furthermore, we can evolve the functionality of the system by changing the code.
+Esaminiamo in dettaglio il post di Satoshi. Nel corso del libro, tratteremo il modo in cui questi concetti vengono effettivamente implementati. Non preoccuparti se qualcosa non ti risulta comprensibile in questa sezione, perché la tratteremo in modo approfondito più avanti. Lo scopo è quello di comprendere gli obiettivi di Satoshi, in modo da poterli raggiungere durante l'esercizio di *Inventare Bitcoin*.
 
 
+> *Ho sviluppato un nuovo sistema open source P2P di moneta elettronica*.
 
-> *It\'s completely decentralized, with no central server or trusted parties...*
+P2P è l'acronimo di *peer to peer* e indica un sistema in cui due persone interagiscono tra loro come soggetti alla pari, senza bisogno di qualcuno in mezzo. Forse ricorderete le tecnologie di condivisione di file P2P come Napster, Kazaa e BitTorrent, che per prime hanno permesso alle persone di condividere musica e film tra loro senza intermediari. Satoshi ha progettato Bitcoin per consentire alle persone di scambiare *e-cash*, contante elettronico, senza ricorrere ad un intermediario, più o meno nello stesso modo.
 
-Satoshi mentions that the system is *decentralized* to distinguish it from systems that do have central control. Prior attempts to create digital cash such as DigiCash by David Chaum were backed by a *central server*, a computer or set of computers that was responsible for issuance and payment verification, under the control of one corporation.
-
-Such centrally controlled private money schemes were doomed to failure; people can't rely on a money that can disappear when the company goes out of business, gets hacked, suffers a server crash, or is shut down by the government.
-
-Bitcoin, on the other hand, is not run and controlled by a single company, but rather by a network of individuals and companies all over the world. To shut down Bitcoin would require shutting down tens to hundreds of thousands of computers around the world, many in undisclosed locations. It would be a hopeless game of wack-a-mole as any attack of this nature would simply encourage the creation of new Bitcoin *nodes,* or computers on the network.
+Il software è *open source*, il che significa che chiunque può vedere come funziona e migliorarlo. Questo è importante perché elimina l'obbligo di fidarsi di Satoshi. Non dobbiamo credere a tutto ciò che Satoshi ha scritto nel suo post sul funzionamento del software. Possiamo guardare il codice e verificarne il funzionamento da soli. Inoltre, possiamo migliorare la funzionalità del sistema modificando il codice.
 
 
 
-> *...everything is based on crypto proof instead of trust*
+> *È completamente decentralizzato, senza server centrale o parti fidate...*
 
-The Internet, and indeed most modern computer systems, are built on cryptography, a method of obscuring information so that only the recipient of the information can decode it. How does Bitcoin get rid of the requirement of *trust?* We'll dive into this later in the book, but the basic idea is that instead of trusting someone that says "I am Alice" or "I have \$10 in my account," we can use cryptographic math to state the same facts in a way that is very easy to verify by the recipient of the proof but impossible to forge. Bitcoin uses cryptographic math throughout its design to allow participants to check the behavior of everyone else without trusting any central party.
+Satoshi indica che il sistema è *decentralizzato* per distinguerlo dai sistemi che hanno un controllo centrale. I precedenti tentativi di creare denaro digitale, come DigiCash di David Chaum, erano basati su un *server centrale*, un computer o un insieme di computer responsabili dell'emissione e della verifica dei pagamenti, che erano controllati da una società.
 
+Questi modelli di moneta privata controllata centralmente erano destinati al fallimento: le persone non possono fare affidamento su una moneta che può scomparire se l'azienda fallisce, viene hackerata, ha un blocco del server o viene chiusa dal governo.
 
-
-> *We have to trust \[the banks\] with our privacy, trust them not to let identity thieves drain our accounts*
-
-Unlike using your bank account, digital payment system, or credit card, Bitcoin allows two parties to transact without giving up any personally identifying information. Centralized repositories of consumer data stored at banks, credit card companies, payment processors, and governments are giant honeypots for hackers. As if to prove Satoshi's point, Equifax was massively compromised in 2017, leaking the identities and financial data of more than 140 million people to hackers.
-
-Bitcoin decouples financial transactions from real world identities. After all, when we give physical cash to someone, they don't need to know who we are, nor do we need to worry that after our exchange they can use some information we gave them to steal more of our money. Why shouldn't we expect the same, or better, from digital money?
+Bitcoin, invece, non è gestito e controllato da una singola azienda, ma piuttosto da una rete di individui e aziende in tutto il mondo. Per chiudere Bitcoin sarebbe necessario spegnere decine o centinaia di migliaia di computer in tutto il mondo, molti dei quali in località ignote. Sarebbe del tutto inutile provarci, poiché qualsiasi attacco di questa natura incoraggerebbe semplicemente la creazione di nuovi *nodi* Bitcoin, o computer della rete.
 
 
 
-> *The central bank must be trusted not to debase the currency, but the history of fiat currencies is full of breaches of that trust*
+> *...tutto si basa sulla prova crittografica anziché sulla fiducia.*
+
+Internet, e di fatto la maggior parte dei sistemi informatici moderni, sono costruiti sulla crittografia, un metodo per oscurare le informazioni in modo che solo chi le riceve possa decodificarle. Come fa Bitcoin a sbarazzarsi del requisito della *fiducia*? Approfondiremo questo aspetto più avanti nel libro, ma l'idea di base è che invece di fidarsi di qualcuno che dice "Sono Alice" o "Ho 10 dollari sul mio conto", possiamo usare la matematica crittografica per affermare gli stessi fatti in un modo che è molto facile da verificare da parte del destinatario della prova, ma impossibile da falsificare. Bitcoin utilizza la matematica della crittografia in tutto il suo funzionamento per consentire ai partecipanti di verificare il comportamento di tutti gli altri senza doversi fidare di un'autorità centrale.
 
 
-*Fiat*, which is Latin for "let it be done," refers to government and central-bank issued currency which is decreed as legal tender by the government. Historically, money was created from things that were hard to produce, easy to verify, and easy to transport, such as seashells, glass beads, silver, and gold. Any time something was used as money, there was a temptation to create more of it. If someone came along with superior technology for quickly creating lots of something, that thing lost value. This is how European settlers were able to strip the African continent of its wealth, by trading easy for them to produce glass beads for hard to produce human slaves. This is why gold was considered such a good money for so long---it was hard to produce more of it quickly.[^1]
 
-We slowly shifted from a world economy that used gold as money to one where paper certificates were issued as a claim on that gold. Eventually, the paper was entirely separated from any physical backing by Nixon, who ended the international convertibility of the US dollar to gold in 1971.
+> *Dobbiamo affidare \[alle banche\] la nostra privacy, sperando che non lascino che i ladri di identità prosciughino i nostri conti correnti.*
 
-The end of the gold standard allowed governments and central banks full permission to increase the money supply at will, diluting the value of each note in circulation, known as *debasement*. Although government-issued, redeemable for nothing, pure fiat currency is the money we all know and use day to day, it is actually a relatively new experiment in the scope of world history.
+Rispetto al tuo conto corrente, sistema di pagamento digitale o carta di credito, Bitcoin consente a due parti di effettuare transazioni senza rivelare alcuna informazione sulla propria identità. Gli archivi centralizzati di dati dei consumatori memorizzati presso banche, società di carte di credito, gestori di pagamenti e governi, costituiscono delle immense e preziosissime prede per gli hacker. A riprova della tesi di Satoshi, nel 2017 Equifax è stata compromessa in modo clamoroso, rivelando agli hacker le identità e i dati finanziari di oltre 140 milioni di persone.
 
-We must trust our governments not to abuse their printing press, but we don't need to look far for examples of *breaches of that trust*. In autocratic and centrally planned regimes where the government has their finger directly on the money machine, such as Venezuela, the currency has become nearly worthless. The Venezuelan Bolivar went from 2 Bolivar to the U.S. dollar in 2009 to 250,000 Bolivar to the U.S. dollar in 2019. As I write this book, Venezuela is in the process of collapse due to the terrible mismanagement of its economy by its government.
+Bitcoin separa le transazioni finanziarie dalle identità del mondo reale. Dopotutto, quando diamo del denaro fisico a qualcuno, non è necessario che sappia chi siamo, né dobbiamo preoccuparci che dopo il nostro scambio costui possa usare alcune informazioni che gli abbiamo dato per rubarci del denaro. Perché non dovremmo aspettarci lo stesso, o addirittura di meglio, dal denaro digitale?
 
-Satoshi wanted to offer an alternative to *fiat* currency whose supply is always expanding unpredictably. In order to prevent *debasement*, Satoshi designed a system of money where the supply was fixed and issued at a predictable and unchangeable rate. There will only ever be 21 million bitcoins, though each bitcoin can be divided into 100 million units now called satoshis, producing a final total of 2.1 quadrillion satoshis in circulation around the year 2140.
 
-Prior to Bitcoin, it was not possible to prevent a digital asset from being infinitely reproduced. It is cheap and easy to copy a digital book, audio file, or video and send it to your friend. The only exceptions to this are digital assets controlled by middlemen. For example, when you rent a movie from iTunes, you can watch it on your device only because iTunes controls the delivery of the movie and can stop it after your rental period. Similarly, your digital money is controlled by your bank. It is the bank's job to keep a record of how much money you have, and if you transfer it to someone else, they can authorize or deny such a transfer.
 
-Bitcoin is the first digital system which enforces scarcity without any middlemen and is the first asset known to humanity whose unchangeable supply and schedule of issuance is known completely in advance. Not even precious metals like gold have this property, since we can always mine more and more gold if it is profitable to do so. Imagine discovering an asteroid containing ten times as much gold as we have on earth. What would happen to the price of gold given such abundant supply? Bitcoin is immune to such discoveries and supply manipulations. It is simply impossible to produce more of it, and we'll explain why in later chapters.
+> *Bisogna fidarsi del fatto che la banca centrale non svaluti la moneta, ma la storia delle valute fiat è piena di tradimenti di questa fiducia.*
 
-The nature of money and the workings of the existing monetary system are intricate, and this book will not cover them in depth. If you would like to know more about the fundamentals of money as they apply to Bitcoin, I would recommend *The Bitcoin Standard* by Saifedean Ammous as a starting point.
 
-> *Data could be secured in a way that was physically impossible for others to access, no matter for what reason, no matter how good the excuse, no matter what. \[...\] It\'s time we had the same thing for money*
+Il termine *fiat*, che in latino significa "che sia fatto", si riferisce alla moneta emessa dal governo e dalla banca centrale e decretata come moneta a corso legale dal governo stesso. Storicamente, il denaro veniva creato da oggetti difficili da produrre, facili da verificare e da trasportare, come conchiglie, perle di vetro, argento e oro. Ogni volta che qualcosa veniva usato come denaro, c'era la tentazione di crearne di più. Se arrivava qualcuno con una tecnologia superiore per creare rapidamente ingenti quantità di qualcosa, quella cosa perdeva valore. È così che i coloni europei sono stati in grado di spogliare il continente africano della sua ricchezza, scambiando perle di vetro facili da creare con schiavi umani difficili da reperire. Questo è il motivo per cui l'oro è stato considerato una moneta così buona per così tanto tempo: era difficile produrne di più rapidamente[^1].
 
-Our current systems of securing money, such as putting it in a bank, rely on trusting someone else to do the job. Trusting such a middleman not only requires confidence that they won't do something malicious or foolish, but also that the government won't seize or freeze your funds by exerting pressure on this middleman. However, it has been demonstrated time and time again, that governments can and do shut down access to money when they feel threatened.
+Siamo passati lentamente da un'economia mondiale che utilizzava l'oro come moneta, ad un'economia in cui i certificati cartacei venivano emessi come credito su quell'oro. Alla fine, la carta fu completamente separata da qualsiasi supporto fisico quando Nixon, nel 1971, pose fine alla convertibilità internazionale del dollaro statunitense in oro.
 
-It might sound silly to someone living in the United States, or another highly regulated economy, to contemplate waking up with your money gone, but it happens all the time. I've had my funds frozen by PayPal simply because I hadn't used my account in months. It took me over a week to get restored access to "my" money. I'm lucky to live in the United States, where at least I could hope to seek some legal relief if PayPal froze my funds, and where I have basic trust that my government and bank won't steal my money.
+La fine del gold standard permise ai governi e alle banche centrali di aumentare a piacimento l'offerta di moneta, diluendo il valore di ogni banconota in circolazione, con la cosiddetta "svalutazione". Sebbene la pura moneta fiat, emessa dai governi e riscattabile in cambio di nulla, sia il denaro che tutti noi conosciamo e utilizziamo quotidianamente, di fatto si tratta di un esperimento relativamente nuovo nell'ambito della storia mondiale.
 
-Much worse things have happened, and are currently happening, in countries with less freedom, such as [banks shutting down during currency collapses](https://www.nbcnews.com/business/business-news/greece-crisis-banks-shut-week-restrictions-imposed-atms-n383606) in Greece, banks in Cyprus proposing bail-ins to confiscate funds from their customers, or [the government declaring certain bank notes worthless](https://www.washingtonpost.com/world/asia_pacific/india-invalidates-large-bank-notes-in-crackdown-on-crime/2016/11/08/cc705ee2-a5c6-11e6-ba46-53db57f0e351_story.html?utm_term=.7951cf519c00) in India.
+Dobbiamo confidare che i nostri governi non abusino della loro stampante di denaro, ma non c'è bisogno di guardare molto indietro per trovare esempi di *violazioni di questa fiducia*. Nei regimi autocratici e pianificati centralmente, dove il governo ha il controllo diretto sul sistema monetario, come nel caso del Venezuela, la moneta è diventata quasi priva di valore. Il Bolivar venezuelano è passato da 2 Bolivar per dollaro statunitense nel 2009 a 250.000 Bolivar per dollaro statunitense nel 2019. Mentre scrivo questo libro, il Venezuela è al collasso a causa della pessima gestione dell'economia da parte del suo governo.
 
-The former USSR, where I grew up, had a government controlled economy leading to massive shortages of goods. It was illegal to own foreign currencies such as the US dollar. When we wanted to leave, we could only exchange a limited amount of money per person to US dollars under an official government mandated exchange rate that was vastly divorced from the true free market rate. Effectively, the government stripped us of what little wealth we had by keeping an iron grip on the economy and the movement of capital.
+Satoshi voleva offrire un'alternativa alla valuta *fiat* la cui offerta si espande sempre in modo imprevedibile. Per evitare la *svalutazione*, Satoshi ha progettato un sistema monetario in cui l'offerta è fissa ed emessa ad un tasso prevedibile e immutabile. Ci saranno sempre e solo 21 milioni di bitcoin, anche se ogni bitcoin può essere diviso in 100 milioni di unità, ora chiamate satoshi (N.d.T: abbreviato in "sats"), per un totale complessivo di 2,1 quadrilioni di satoshi in circolazione verso l'anno 2140.
 
-Autocratic countries tend to implement strict economic controls, preventing people from withdrawing their money from banks, carrying it out of the country, or exchanging it for not-yet-worthless currencies like the US dollar on the free market. This allows the government free reign to implement insane economic experiments such as the socialist system of the USSR.
+Prima di Bitcoin, non era possibile impedire che un bene digitale venisse riprodotto all'infinito. È facile ed economico copiare un libro digitale, un file audio o un video, e inviarlo ad un amico. L'unica eccezione è rappresentata dagli asset digitali controllati da intermediari. Ad esempio, se noleggiate un film da iTunes, potete guardarlo sul vostro dispositivo solo perché iTunes controlla la trasmissione del film e può interromperla al termine del periodo di noleggio. Allo stesso modo, il tuo denaro digitale è controllato dalla tua banca. È compito della banca tenere un registro di quanto denaro hai e, se lo trasferisci a qualcun altro, può autorizzare o negare tale trasferimento.
 
-Bitcoin does not rely on trust in a third party to secure your money. Instead Bitcoin makes your coins *impossible for others to access* without a special key that only you hold, *no matter for what reason, no matter how good the excuse, no matter what*. By holding Bitcoin, you hold the keys to your own financial freedom. Bitcoin separates money and state
+Bitcoin è il primo sistema digitale che garantisce la scarsità senza intermediari ed è il primo bene conosciuto dall'umanità la cui offerta immutabile e il cui programma di emissione sono perfettamente noti in anticipo. Nemmeno i metalli preziosi come l'oro hanno questa proprietà, poiché possiamo continuare ad estrarre sempre più oro, a patto che sia redditizio farlo. Immagina che venga scoperto un asteroide contenente una quantità d'oro dieci volte superiore a quella che abbiamo sulla Terra. Cosa succederebbe al prezzo dell'oro in presenza di un'offerta così abbondante? Bitcoin è immune da tali scoperte e manipolazioni dell'offerta. È semplicemente impossibile produrne di più, e spiegheremo perché nei capitoli successivi.
 
-> *Bitcoin\'s solution is to use a peer-to-peer network to check for double-spending \[...\] like a distributed timestamp server, stamping the first transaction to spend a coin*
+La natura del denaro e il funzionamento del sistema monetario esistente sono intricati, e questo libro non li tratterà in modo approfondito. Se volete saperne di più sui principi fondamentali del denaro applicati a Bitcoin, ti consiglio di partire dalla lettura de *Il Bitcoin Standard* di Saifedean Ammous.
 
-A *network* refers to the idea that a bunch of computers are connected and can send messages to each other. The word *distributed* means that there is not a central party in control, but rather that all the participants coordinate to make the network successful.
+> *I dati hanno potuto essere protetti in modo tale da rendere fisicamente impossibile l'accesso da parte di terzi, per qualsiasi motivo, a prescindere dalla scusa, senza eccezioni. \[...\] È ora che la stessa cosa valga anche per il denaro.*
 
-In a system without central control, it's important to know that nobody is cheating. The idea of *double-spending* refers to the ability to spend the same money twice. This is not a problem with physical money as it leaves your hand when you spend it. Digital transactions, however, can be copied just like music or movies. When you send money through a bank, they make sure that you can't move the same money twice. In a system without central control, we need a way to prevent this kind of *double-spending*, which is effectively the same as forging money.
+I nostri attuali sistemi di protezione del denaro, come il deposito in banca, si basa sull'affidabilità dell'intermediario che svolge questo compito. La fiducia riposta in questo intermediario non richiede solo la convinzione che non compia azioni malevole o sconsiderate, ma anche che il governo non sequestri o congeli i tuoi fondi esercitando pressioni su questo intermediario. Tuttavia, è stato dimostrato più volte che i governi possono bloccare l'accesso al denaro quando si sentono minacciati.
 
-Satoshi is describing that the participants of the Bitcoin network work together to *timestamp* (put in order) transactions so that we know what came first, and therefore we can reject any future attempts to spend the same money. In the next few chapters, we will build this system from the ground up. It will enable us to detect forgery without relying on any central issuer or transaction validator.
+A chi vive negli Stati Uniti, o in un'altra economia altamente regolamentata, potrebbe sembrare assurdo pensare di svegliarsi con i propri soldi volatilizzati, ma succede di continuo. Mi è capitato di vedermi congelare i fondi da PayPal semplicemente perché non usavo il mio conto da mesi. Mi ci è voluta più di una settimana per ottenere il ripristino dell'accesso al "mio" denaro. Sono fortunato ad abitare negli Stati Uniti, dove, se PayPal bloccasse i miei fondi, potrei quantomeno sperare di ottenere un risarcimento legale, e dove nutro un minimo di fiducia nel fatto che il mio governo e la mia banca non mi derubino.
 
-***
+In Paesi con meno libertà, sono accadute, e stanno accadendo, cose ben peggiori, come [la chiusura delle banche durante i crolli valutari](https://www.nbcnews.com/business/business-news/greece-crisis-banks-shut-week-restrictions-imposed-atms-n383606) in Grecia, le banche di Cipro che propongono salvataggi bancari attraverso la confisca dei fondi dei loro clienti, o [il governo che dichiara senza valore alcune banconote](https://www.washingtonpost.com/world/asia_pacific/india-invalidates-large-bank-notes-in-crackdown-on-crime/2016/11/08/cc705ee2-a5c6-11e6-ba46-53db57f0e351_story.html?utm_term=.7951cf519c00) in India.
 
-Bitcoin was not an invention made in a vacuum. In his paper, Satoshi cited several important attempts at implementing similar systems including Wei Dai's b-money, and Adam Back's Hashcash. The invention of Bitcoin stood on the shoulders of giants, but no one prior had put all the right pieces together, creating the first system for issuing and transferring a truly scarce digital money without central control. 
+L'ex Unione Sovietica, dove sono cresciuto, aveva un'economia controllata dal governo che portava ad una massiccia carenza di beni. Era illegale possedere valute straniere come il dollaro statunitense. Quando abbiamo deciso di andarcene, abbiamo potuto cambiare in dollari statunitensi solo una quantità limitata di denaro per persona, in base ad un tasso di cambio ufficiale imposto dal governo che si discostava notevolmente dal vero tasso del libero mercato. Di fatto, il governo ci ha privato di quel poco di ricchezza che avevamo, mantenendo un controllo ferreo sull'economia e sulla circolazione dei capitali.
 
-Satoshi tackled a number of interesting technical problems in order to address the issues of privacy, debasement, and central control in current monetary systems:
+I Paesi autocratici tendono ad attuare rigidi controlli economici, impedendo alle persone di ritirare il proprio denaro dalle banche, di portarlo fuori dal Paese o di scambiarlo con valute non ancora prive di valore, come il dollaro statunitense sul libero mercato. Questo permette al governo di attuare esperimenti economici folli come il sistema socialista dell'URSS.
 
-1.  How to create a peer to peer network that allows anyone to voluntarily join and participate.
-2.  How a group of people that don't have to reveal their identities or trust each other can maintain a shared ledger of value, even if some of them are dishonest.
-3.  How to allow people to issue their own unforgeable currency without relying on a central issuer while maintaining the scarcity of that currency so that production of new units isn't a free-for-all.
+Bitcoin, per proteggere il tuo denaro, non si basa sulla fiducia in una terza parte. Al contrario, Bitcoin rende le tue monete *impossibili da accedere per gli altri* senza una chiave speciale che solo tu possiedi, *per qualsiasi motivo, a prescindere dalla scusa, senza eccezioni*. Detenendo Bitcoin, hai le chiavi della tua libertà finanziaria. Bitcoin separa il denaro e lo Stato.
 
-When Bitcoin was launched, only a handful of people used it and ran the Bitcoin software on their computer *nodes* to power the Bitcoin network. Most people at the time thought it was a joke, or that the system would reveal serious design flaws that would make it unworkable.
+> *La soluzione di Bitcoin consiste nell\'utilizzare una rete peer-to-peer per rilevare eventuali doppie spese. \[...\] come un servizio di timestamp distribuito, che contrassegna la prima transazione che spende una moneta.*
 
-Over time, more people joined the network, using their computers to add security to the network and reinforcing that it had value by exchanging other currencies for it, or accepting it for goods and services. Today, ten years later, it is used by millions of people with tens to hundreds of thousands of nodes running the free Bitcoin software, which is developed by hundreds of volunteers and companies worldwide.
+Il concetto di *rete* si riferisce all'idea che un gruppo di computer sia interconnesso e possa inviare messaggi l'uno all'altro. La parola *distribuita* significa che non c'è una parte centrale che esercita il controllo, ma piuttosto che tutti i partecipanti si coordinano per far sì che la rete abbia successo.
 
-Let's figure out how we can build this system!
+In un sistema senza controllo centrale, è importante sapere che nessuno stia imbrogliando. L'idea di *doppia spesa* si riferisce alla possibilità di spendere lo stesso denaro due volte. Questo non è un problema con il denaro fisico, perché passa da una mano all'altra quando lo si spende. Le transazioni digitali, invece, possono essere copiate proprio come la musica o i film. Quando si invia denaro attraverso una banca, questa si prende cura del fatto che lo stesso denaro non venga spostato due volte. In un sistema senza controllo centrale, abbiamo bisogno di un modo per prevenire questo tipo di *doppia spesa*, che equivale a falsificare il denaro.
+
+Satoshi spiega che i partecipanti alla rete Bitcoin collaborano per *timestampare* (mettere in ordine temporale) le transazioni, in modo da conoscere quale sia stata la prima, così da poter respingere qualsiasi tentativo futuro di spendere nuovamente lo stesso denaro. Nei prossimi capitoli costruiremo questo sistema dalle fondamenta. Questo ci permetterà di individuare le falsificazioni senza affidarci ad un emittente centrale o ad un validatore di transazioni.
 
 ***
-[^1]: For a great overview of monetary history, I recommend the essay *Shelling Out* by Nick Szabo: <https://nakamotoinstitute.org/shelling-out/>
+
+Bitcoin non è stata un'invenzione fatta dal nulla. Nel suo documento, Satoshi ha citato diversi importanti tentativi di implementare sistemi simili, tra cui b-money di Wei Dai e Hashcash di Adam Back. L'invenzione di Bitcoin poggia sulle spalle di giganti, ma nessuno prima di lui aveva messo insieme tutti i pezzi giusti, creando il primo sistema per l'emissione ed il trasferimento di una moneta digitale veramente scarsa senza un controllo centrale. 
+
+Satoshi ha superato una serie di interessanti problemi tecnici per affrontare le questioni della privacy, della svalutazione e del controllo centrale negli attuali sistemi monetari:
+
+1.  Come creare una rete peer to peer che permetta a chiunque di aderire e partecipare volontariamente.
+2.  Come un gruppo di persone che non devono rivelare la propria identità o fidarsi l'uno dell'altro può mantenere un libro mastro condiviso di valore, anche se alcuni di loro sono disonesti.
+3.  Come consentire alle persone di emettere la propria moneta non falsificabile senza affidarsi ad un emittente centrale, mantenendo al contempo la scarsità di tale moneta in modo che la produzione di nuove unità non vada fuori controllo.
+
+Quando Bitcoin fu lanciato, solo poche persone lo utilizzavano e facevano girare il software Bitcoin sui loro computer o *nodi* per alimentare la rete Bitcoin. All'epoca, la maggior parte delle persone pensava che si trattasse di uno scherzo o che il sistema avrebbe rivelato gravi difetti di progettazione che lo avrebbero reso impraticabile.
+
+Nel corso del tempo, sempre più persone si sono unite alla rete, utilizzando i loro computer per aggiungere sicurezza alla rete e rafforzando il valore di Bitcoin scambiando altre valute o accettandolo in cambio di beni e servizi. Oggi, dieci anni dopo, è utilizzata da milioni di persone con decine o centinaia di migliaia di nodi che eseguono il software libero Bitcoin, sviluppato da centinaia di volontari e aziende in tutto il mondo.
+
+Scopriamo come costruire questo sistema!
+
+***
+[^1]: Per un'ottima panoramica della storia monetaria, consiglio il saggio *Shelling Out* di Nick Szabo: <https://nakamotoinstitute.org/shelling-out/>
 
